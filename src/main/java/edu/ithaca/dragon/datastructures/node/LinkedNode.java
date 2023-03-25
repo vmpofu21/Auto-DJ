@@ -1,27 +1,31 @@
 package edu.ithaca.dragon.datastructures.node;
 
-public class LinkedNode<T> {
-    private T item;
-    private LinkedNode<T> next;
+ 
+public class LinkedNode {
+    private Song item;
+    private LinkedNode next;
 
-    public LinkedNode(T item){
+    public LinkedNode(Song item){
         this(item, null);
     }
 
-    public LinkedNode(T item, LinkedNode<T> next){
+    public LinkedNode(Song item, LinkedNode  next){
         this.item = item;
         this.next = next;
     }
 
-    public void setNext(LinkedNode<T> next){
+    public LinkedNode() {
+    }
+
+    public void setNext(LinkedNode next){
         this.next = next;
     }
 
-    public T getItem(){
+    public Song getItem(){
         return item;
     }
 
-    public LinkedNode<T> getNext(){
+    public LinkedNode getNext(){
         return next;
     }
 
